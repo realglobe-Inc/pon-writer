@@ -26,6 +26,8 @@
     "writeout": "^2.1.0"
   },
   "devDependencies": {
+    "ababel": "^2.0.1",
+    "ababel-es2015": "^2.0.1",
     "amocha": "^2.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
@@ -35,6 +37,7 @@
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
     "pon-assets": "^1.1.1",
+    "sg-templates": "^1.4.4",
     "stringcase": "^3.2.1",
     "sugos-travis": "*"
   },
