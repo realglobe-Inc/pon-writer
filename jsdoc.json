@@ -1,0 +1,104 @@
+{
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a PonWriter instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "PonWriter",
+        "description": ""
+      }
+    }
+  ],
+  "classes": [
+    {
+      "name": "PonWriter",
+      "description": "",
+      "extends": [],
+      "access": "",
+      "virtual": false,
+      "fires": "",
+      "constructor": {
+        "name": "PonWriter",
+        "description": "Writer for pon",
+        "parameters": [],
+        "examples": []
+      },
+      "functions": [
+        {
+          "name": "write",
+          "access": "",
+          "virtual": false,
+          "description": "Write into file",
+          "parameters": [
+            {
+              "name": "filename",
+              "type": "string",
+              "description": "Filename to write",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "content",
+              "type": "string",
+              "description": "Content to write",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "options",
+              "type": "Object",
+              "description": "Optional settings",
+              "default": "{}",
+              "optional": true,
+              "nullable": ""
+            },
+            {
+              "name": "options.mkdirp",
+              "type": "boolean",
+              "description": "Make parent directory",
+              "default": false,
+              "optional": true,
+              "nullable": ""
+            },
+            {
+              "name": "options.skipIfIdentical",
+              "type": "boolean",
+              "description": "Skip to write if identical",
+              "default": false,
+              "optional": true,
+              "nullable": ""
+            },
+            {
+              "name": "options.cwd",
+              "type": "string",
+              "description": "Current working directory",
+              "default": "process.cwd()",
+              "optional": true,
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<WriteResult>",
+            "description": "- Result of writing"
+          }
+        }
+      ]
+    }
+  ]
+}
