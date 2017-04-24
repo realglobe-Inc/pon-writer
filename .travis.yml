@@ -2,13 +2,9 @@ language: node_js
 node_js:
 - '6'
 before_install:
-# TODO OSS
-# - npm i npm-cli-login -g
-# - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
-# - npm who
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > $HOME/.npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> $HOME/.npmrc
-- cat $HOME/.npmrc
+ - npm i npm-cli-login -g
+ - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
+ - npm who
 install:
 - npm install jsdoc -g
 - npm install
@@ -20,4 +16,4 @@ script:
 after_success:
 - ./ci/travis/publish.js
 env:
-  secure: "3WucJgQpBFe/X5hVKhD6Tx94Br9IAbTDuM2mti/ckq704RqIJS2B/DpVZOSnJYH0FFmjVH2jiSL7+KP6Fh3Xc9+kkycAf7O1QmKYoGulEnynhHzAoNxR2k10ozXBhxQsq9HN4zZmKweBZb+PPkRQ9V9GuirNl8p1ftglpeI3K0Kn2VU6pLLCw7NMyoKuwf+lOd/tbPVffdoNMx3g4MYe5T63f3NkfZUKh6p0V2jy0NT+m7WuYiOSU9gYgudvcVY8KFDCPzoQ0PPGPXsfhhzas3IHOBejjl2JDxOYVE7btD5uaL0FkLo6N+1J+ONMI8gobfEXHTZOu2BgtG1RPQX8MnLBckeVc333f1ZRAg8vkG9G1tBqtOLtr5z5V8+vPcyQnQwXjaRWPXTVXZLSAgSZFOhJ8/mX1SVQ3+P4JKruINDbBwh+5jObDLEGUsRANfYLieVJDHzSzKSDF9BBPGz/PH+HiB/kae05JKonPLsRkZ3yzfj/UqdqI4C9cUXWZdNybAv3DgRpWhCjVAipLr2HT2ap1XhOcFPk9+gN6At8huP6NKi7YZelmiLS0dW0xdQpItVl2Mu6QRk4TDVP8OOSxGFP/7uU/Tn3QmQgHMlkl+WHUrSJ53cfIYFMSXi1oN4bON9kIblcjQ2T7ufFEzKOdX83jgnt8b5lncgOGJS1nos="
+  secure: "HclOGt5aEezZpvUqu2pi1SrbZtCvFBrN4CPOrAY3IRLj8HZyyIr6WL5oOyu19d0EgZwYVjsXS/Za4MwNCC5BRJv9XKsldifYYEY5Giz/OqhH64cuE2vfm4w3Qe9g/oP/ku/6s0jVGIOrBo1N8GGAYrXVH33aOSc12+Ewvf4ybCwYPLbFyjW9d/ZGbtpHp5/WhemwORLV0H1h8AJWYKXqH+FwyhfEYz+yAwgtywehcleGqcOoy3p1/wpAPwaMO83KZAAKY6SRi5yGvBgbRA4eyrEV+jpDfjYsybt6D7A12cc9nYkZuPryVFiHTDA4W2cC1vI7H8Mgi65+ZEWx2dplOLHtqUqj7hdhLVtgiLBFXpQQ+iJkS3rYifuPqGC8NZZSwiTnXizRvJkmRua8LaI8V+65YgXHqwQHaYbMnVoBjxoH0ltGGpo/82taC5ujjKjLqE2Jp2JWps6jfXGcgJqyVqW8n+wk1uaXt0FQmvqHe9k1O8a5/q6ngLEfDUeBXzV4SWjZdVTy4+XY/2D9JreZcndDt9Kp1ixKpumokgdpeSyis+QD82GC39Z76Q+rNTJ3oXeV3JghvTNBr1ySwXdbTmVid6tatN3fp3oqOrrI/EmuxyszXIJWf7xH/2AhXpDEuUMO62y1Q3B96+aWYIKIcYLN441+Vbg0RVJ7SVtMqNw="
