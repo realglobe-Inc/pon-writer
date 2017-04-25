@@ -105,7 +105,7 @@ tryExample().catch((err) => console.error(err))
 API Guide
 -----
 
-+ [pon-writer@1.0.1](./doc/api/api.md)
++ [pon-writer@1.0.2](./doc/api/api.md)
   + [create(args)](./doc/api/api.md#pon-writer-function-create)
   + [PonWriter](./doc/api/api.md#pon-writer-class)
 
