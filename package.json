@@ -1,6 +1,6 @@
 {
   "name": "pon-writer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "File writer for pon",
   "main": "lib",
   "scripts": {
