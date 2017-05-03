@@ -1,4 +1,4 @@
-# pon-writer@1.0.2
+# pon-writer@1.0.3
 
 File writer for pon
 
@@ -48,7 +48,7 @@ Write into file
 | Param | Type | Description |
 | ----- | --- | -------- |
 | filename | string | Filename to write |
-| content | string | Content to write |
+| content | string,Buffer,ReadableStream | Content to write |
 | options | Object | Optional settings |
 | options.mkdirp | boolean | Make parent directory |
 | options.skipIfIdentical | boolean | Skip to write if identical |

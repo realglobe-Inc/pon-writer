@@ -23,7 +23,7 @@
   "homepage": "https://github.com/realglobe-Inc/pon-writer#readme",
   "dependencies": {
     "co": "^4.6.0",
-    "writeout": "^2.1.0"
+    "writeout": "^2.2.0"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
