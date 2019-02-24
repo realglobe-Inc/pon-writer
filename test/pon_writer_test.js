@@ -6,22 +6,13 @@
 
 const PonWriter = require('../lib/pon_writer.js')
 const assert = require('assert')
-const co = require('co')
 
 describe('pon-writer', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
-
-  }))
-
-  after(() => co(function * () {
-
-  }))
-
-  it('Pon writer', () => co(function * () {
+  it('Pon writer', async () => {
     let writer = new PonWriter({})
-    yield writer.write(
+    await writer.write(
       `${__dirname}/../tmp/foo/bar.txt`,
       'This is bar!',
       {
@@ -29,7 +20,7 @@ describe('pon-writer', function () {
         mkdirp: true
       }
     )
-  }))
+  })
 })
 
 /* global describe, before, after, it */
